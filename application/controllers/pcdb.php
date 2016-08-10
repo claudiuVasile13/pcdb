@@ -82,7 +82,7 @@ class Pcdb extends CI_Controller {
         $this->load->library('form_validation');
         //field name, error message, validation rules
         $this->form_validation->set_rules('title', 'Title', 'trim|required|min_length[4]|max_length[45]');
-        $this->form_validation->set_rules('description', 'Description', 'trim|required|min_length[20]|max_length[200]');
+        $this->form_validation->set_rules('description', 'Description', 'trim|required|min_length[20]');
         $this->form_validation->set_rules('director', 'Director', 'trim|required|min_length[6]|max_length[45]');
         $this->form_validation->set_rules('writer', 'Writer', 'trim|required|min_length[6]|max_length[45]');
         $this->form_validation->set_rules('genre', 'Genre', 'trim|required');
@@ -147,7 +147,7 @@ class Pcdb extends CI_Controller {
         $this->load->library('form_validation');
         //field name, error message, validation rules
         $this->form_validation->set_rules('title', 'Title', 'trim|required|min_length[4]|max_length[45]');
-        $this->form_validation->set_rules('description', 'Description', 'trim|required|min_length[20]|max_length[200]');
+        $this->form_validation->set_rules('description', 'Description', 'trim|required|min_length[20]');
         $this->form_validation->set_rules('director', 'Director', 'trim|required|min_length[6]|max_length[45]');
         $this->form_validation->set_rules('writer', 'Writer', 'trim|required|min_length[6]|max_length[45]');
         $this->form_validation->set_rules('genre', 'Genre', 'trim|required');
